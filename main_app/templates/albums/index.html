@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Albums{% endblock %}
+
+{% block content %}
+
+<h1>Albums List</h1>
+
+{% for album in albums %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ album.name }}</span>
+      <p>{{ album.description }}</p>
+    </div>
+  </div>
+{% endfor%}
+
+{% endblock %}
